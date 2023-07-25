@@ -1,0 +1,182 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+   
+    position: relative;
+    background-color: #2874f0;
+}
+body p{
+    text-align: justify;
+}
+.first h1{
+    font-size: 1.8rem;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+}
+#kitchen{
+    display: flex;
+    padding: 1rem;
+    color: white;
+}
+
+nav{
+    display: flex;
+   
+padding-top: 1rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 1.4rem;
+    font-weight: 900px;
+    padding:.6rem;
+    cursor: pointer;
+   
+    
+    
+}
+nav ul li:hover{
+text-decoration: underline white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+.menuicon{
+    display: none!important;
+}
+input{
+    display: none;
+}
+.back{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    padding: .4rem;
+   
+}
+
+.first{
+    display: flex;
+   
+    width: 100%;
+    
+    gap: 10px;
+    padding: .4rem 1rem;
+}
+.first h1{
+    color: white;
+    font-weight: bolder;
+}
+ #story h1{
+    color: white;
+    text-align: center;
+    text-shadow: 4px -4px black;
+    font-size: 3rem;
+  
+}
+.content p{
+    font-size: 1.2rem;
+}
+.back a{
+text-decoration: none;
+
+}
+
+.aboutus{
+    display: flex;
+   
+    
+}
+.content{
+    padding: 2rem;
+    
+   
+}
+.content p{
+    line-height: 2.5rem;
+    font-weight: bold;
+}
+@media screen and (min-width:600px) and (max-width:950px) {
+    .aboutus{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width:310px) and (max-width:600px) {
+    .img{
+width: 100%;
+    }
+    .img img{
+        width: 310px;
+        height: 400px;
+    }
+    .aboutus{
+        flex-wrap: wrap;
+    }
+    .first h1{
+        font-size: 1.5rem;
+    }
+    .head h1{
+        font-size: 1.5rem;
+        margin-top: 5px;
+    }
+    
+}
+@media screen and (max-width:900px) {
+    nav{
+        position: fixed;
+        top: 65px;
+        left: -850px;
+        height: 100vh;
+        width: 100%;
+        background-color: #2874f0;
+        transition: all 1s;
+        padding: .8rem;
+        justify-content: center;
+      
+    }
+    nav ul{
+        flex-direction: column;
+       
+        width: 100%;
+        background-color: unset;
+    }
+    nav ul li {
+        background-color: #2874f0;
+        text-align: center;
+    }
+    nav ul li a{
+        background-color: #2874f0;
+        font-size: 1.3rem;
+    
+    }
+    .menuicon{
+        display: unset!important;
+        font-size: 2rem;
+      
+        padding: .3rem .5rem;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        color: white;
+        
+        
+    }
+    label{
+        position: relative;
+    }
+    input:checked~nav{
+        left: 0px;
+    }
+}

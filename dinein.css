@@ -1,0 +1,326 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    
+}
+body{
+  
+    background-color: #2874f0;
+}
+.first{
+    margin-left: -45px;
+}
+.head h1{
+    font-size: 1.8rem;
+    margin-left: -10px;
+}
+.head div:first-child{
+    display: flex;
+    gap: 5px;
+    padding: 1rem;
+    /* border: 1px solid; */
+}
+nav{
+    display: flex;
+  
+padding-top: 1rem;
+
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 1.4rem;
+    font-weight: 900px;
+    padding:.6rem;
+    cursor: pointer;
+  
+   
+    
+}
+nav ul li:hover{
+text-decoration: underline white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+.menuicon{
+    display: none!important;
+}
+input{
+    display: none;
+}
+.backmenu{
+    position: absolute;
+left: 2px;
+top: 25px;
+padding: .4rem;
+}
+.star p{
+    font-size: 1.2rem;
+    padding: 0 .2rem;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.main{
+    margin-top: 20px;
+}
+.first{
+    display: flex;
+}
+.first h1{
+    color: white;
+    font-weight: bolder;
+}
+.second{
+    border: 1px solid white ;
+    border-radius: 10px ;
+   padding: 0  1rem;
+    display: flex;
+    align-items: center;
+    color: white;
+   
+}
+
+.third p{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 7px;
+    
+}
+.second img{
+    padding: .5rem;
+}
+.first img{
+    padding: 0 .7rem;
+}
+.chennai{
+    padding: .8rem;
+    padding-left: 7rem;
+
+}
+.dineout img{
+    height: 100px;
+    width: 100px;
+    mix-blend-mode: darken;
+   
+}
+.dineout{
+    display: flex;
+    padding-left: 3rem;
+    /* border: 1px solid; */
+    gap: 10px;
+    overflow: hidden;
+}
+.dineout1{
+    animation-name: dine;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    position: relative;
+ 
+}
+.dineout1 img{
+    mix-blend-mode: darken;
+    object-fit: cover;
+    
+}
+@keyframes dine {
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 50%;
+    }
+    100%{
+        left: 100%;
+    }
+    
+}
+.dineout a{
+    margin-top: 35px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.main{
+   
+    overflow-x: scroll;
+    overflow: hidden;
+    padding: 1rem;
+    gap: 10px;
+
+}
+.dineinin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+    overflow: hidden;
+    padding: 1rem;
+    gap: 10px; 
+  
+
+}
+@keyframes items {
+    0%{
+        right: 0vw;
+    }
+    50%{
+        right: 50vw;
+    }
+    100%{
+        right: 100vw;
+    }
+}
+.box{
+    height: 320px;
+    gap: 10px;
+   
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px;
+    animation-name: items;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+    color: #2874f0;
+    box-shadow: 2px 2px 2px white;
+    background-color: white;
+    
+
+}
+.box:hover{
+  
+    cursor: pointer;
+    height: 335px;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+}
+.last p{
+    color: #2874f0;
+}
+.star{
+    display: flex;
+  
+    align-items: end;
+   
+}
+#tag h2{
+    
+    color: #2874f0;
+    font-weight: bolder;
+}
+.color p{
+   
+    color: #2874f0;
+    font-weight: bold;
+}
+#rup p{
+color: #2874f0;
+}
+#rup{
+    border: 1px solid;
+}
+.box h2{
+    font-size: 1.2rem;
+}
+
+      
+
+.box img{
+    height: 200px;
+    width: 270px;
+    object-fit: cover;
+}
+.star img{
+    height: 18px;
+    width: 18px;
+    margin-bottom: 3px;
+}
+.chennai a{
+    text-decoration: none;
+}
+@media screen and (max-width:500px) {
+.first h1{
+    font-size: 1.4rem;
+    margin-top: 5px;
+}
+.chennai{
+    padding-left: 2rem;
+}
+.dineout{
+    padding-left: .5rem;
+}
+.dineout a{
+    margin-left: -10px;
+}
+
+
+}
+@media screen and (max-width:900px) {
+    nav{
+        position: fixed;
+        top: 65px;
+        left: -850px;
+        height: 100vh;
+        width: 100%;
+        background-color: #2874f0;
+        transition: all 1s;
+        padding: .8rem;
+        justify-content: center;
+        z-index: 1;
+    }
+    nav ul{
+        flex-direction: column;
+       
+        width: 100%;
+       
+    }
+    nav ul li {
+        background-color: #2874f0;
+        text-align: center;
+    }
+    nav ul li a{
+        background-color: #2874f0;
+        font-size: 1.3rem;
+    
+    }
+    .menuicon{
+        display: unset!important;
+        font-size: 2rem;
+       
+        padding: .3rem .5rem;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+       
+        
+       
+    }
+    label{
+        position: relative;
+       
+    
+    }
+    input:checked~nav{
+        left: 0px;
+    }
+}

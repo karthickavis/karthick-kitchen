@@ -1,0 +1,283 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+     
+}
+.first{
+    margin-left: -45px;
+}
+
+body{
+
+position: relative;
+background-color: #2874f0;
+    
+}
+.first h1{
+    font-size: 1.8rem;
+}
+
+nav{
+    display: flex;   
+padding-top: 1rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 1.4rem;
+    font-weight: 900px;
+    padding:.6rem;
+    cursor: pointer;
+    
+}
+nav ul li:hover{
+text-decoration: underline white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+.menuicon{
+    display: none!important;
+}
+input{
+    display: none;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.first{
+    display: flex;
+    /* border: 1px solid; */
+    padding: 1rem;
+}
+.first h1{
+    color: white;
+    font-weight: bolder ;
+}
+.second{
+    border: 1px solid ;
+    border-radius: 10px ;
+   padding: 0  1rem;
+    display: flex;
+    align-items: center;
+   
+}
+.third p{
+    font-size: 1.5rem;
+    margin-top: 7px;
+}
+.second img{
+    padding: .5rem;
+}
+.first img{
+    padding: 0 .7rem;
+}
+.container{
+    
+    display: flex;
+}
+.chennai{
+    padding: .8rem;
+    padding-left: 7rem;
+
+}
+.parcel img{
+    height: 100px ;
+    width: 100px;
+   border-radius: 50%;
+    
+   
+   
+}
+.parcel a{
+    padding: 0px .3rem;
+}
+.parcel {
+    display: flex;
+    padding-left: 7rem;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.parcel .delivery, .dineout, .carryout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+}
+
+
+.delivery, .dineout, .carryout a{
+    font-size: 1.5rem;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+.item img{
+    height: 200px;
+    width: 200px;
+    padding: 1rem;
+    object-fit: cover;
+    /* background-color: #2874f0; */
+    
+}
+
+.chennai a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    display: flex;
+}
+.item{
+    display: flex;
+   justify-content: space-evenly;
+   padding: .8rem;
+    width: 100%;
+    flex-wrap: wrap;
+    /* align-content: space-evenly; */
+    gap: 10px;
+}
+
+h4{
+   text-align: center;
+   
+   font-size: 2rem;
+   padding: .5rem;
+    
+}
+
+
+
+a{
+    color: white;
+}
+.thali img, .desserts img {
+    border-radius: 50%;
+}
+
+.starters, .briyani, .thali, .desserts{
+    /* border: 2px solid  #2874f0 ; */
+    border-radius: 15px ;
+    box-shadow: 5px 5px 2px black ;
+    cursor: pointer;
+    background-color: white;
+
+   
+}
+.starters, .briyani, .thali, .desserts p{
+    font-size: 1.7rem;
+    text-align: center;
+    font-size: bold;
+    padding: 0px 0px .3rem 0px;
+    color: #2874f0;
+ 
+}
+.item p{
+    color: #2874f0;
+}
+.desserts{
+    text-align: center;
+}
+
+.back {
+position: absolute;
+top: 90px;
+right: 40px;
+border: 1px solid beige;
+border-radius: 50%;
+padding: .1rem;
+background-color: beige;
+
+}
+@media screen and (min-width:310px) and (max-width:500px){
+    
+    .first h1{
+        font-size: 1.4rem;
+        margin-top: 5px;
+    }
+    .first{
+        margin-left: -40px;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    
+    .parcel{
+        padding: 2rem;
+    }
+    .chennai{
+        padding: .8rem;
+        padding-left: 4rem;
+    }
+    .starters, .briyani, .thali, .desserts{
+        width: 100%;
+    }
+}
+@media screen and (max-width:680px) {
+    
+    
+    .item div{
+        width: 100%;
+    }
+}
+@media screen and (max-width:900px) {
+    nav{
+        position: fixed;
+        top: 65px;
+        left: -850px;
+        height: 100vh;
+        width: 100%;
+        background-color: #2874f0;
+        transition: all 1s;
+        padding: .8rem;
+        justify-content: center;
+        z-index: 1;
+    }
+    nav ul{
+        flex-direction: column;
+        /* padding: .8rem; */
+        width: 100%;
+        /* background-color: unset; */
+    }
+    nav ul li {
+        background-color: #2874f0;
+        text-align: center;
+    }
+    nav ul li a{
+        /* background-color: #2874f0; */
+        font-size: 1.3rem;
+    
+    }
+    .menuicon{
+        display: unset!important;
+        font-size: 2rem;
+        padding: .3rem .5rem;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+       
+    }
+    label{
+        position: relative;
+
+    }
+    input:checked~nav{
+        left: 0px;
+    }
+}

@@ -1,0 +1,242 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    position: relative;
+   
+    background-color: #2874f0;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+}
+#kitchen{
+    display: flex;
+    padding: 1rem;
+    color: white;
+}
+nav{
+    display: flex;
+  
+padding-top: 1rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 1.4rem;
+    font-weight: 900px;
+    padding:.6rem;
+    cursor: pointer;
+   
+    
+}
+nav ul li:hover{
+text-decoration: underline white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+.menuicon{
+    display: none!important;
+}
+input{
+    display: none;
+}
+
+.first{
+    display: flex;
+    gap: 5px;
+    padding: 1rem .8rem;
+}
+.first h1{
+    color: white;
+    font-family: bolder;
+}
+.back{
+position: absolute;
+right: 5px;
+top: 25px;
+}
+h2{
+    color: white;
+}
+.contact{
+    display: flex;
+  
+    justify-content: center;
+    padding: .5rem;
+    gap: 10px;
+}
+#touch h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 4px 4px black;
+}
+.address{
+  
+    padding: 1rem;
+    box-shadow: -2px 2px  white;
+    
+
+}
+.location img{
+    height: 30px;
+   
+    margin-top: 17px;
+
+}
+.address div{
+    padding: .3rem 0px;
+}
+.location, .mail, .phone{
+    display: flex;
+    gap: 15px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 250px;
+}
+.input{
+   
+    padding: 1rem;
+    box-shadow: 2px -2px white;
+    display: flex;
+    flex-direction: column;
+   
+    gap: 10px;
+   
+}
+
+.address p{
+    line-height: 1.5rem;
+   color: black;
+    
+}
+.box{
+    padding: 1rem 0;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.input h1{
+    color: white;
+}
+.box input{
+    width: 100%;
+    padding: .8rem;
+    border-radius: 20px;
+    border: 2px solid black;
+    
+    
+}
+
+textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    
+    outline: none;
+    border-radius: 20px;
+}
+.btn button{
+    width: 100%;
+    padding: .7rem;
+    font-size: 1.3rem;
+    background-color: #76a4f3;
+    border-radius: 25px;
+    border: 2px solid white;
+
+}
+.btn{
+    padding: 1rem 0;
+}
+button a{
+    text-decoration: none;
+ color: white;
+}
+.socialmedia div{
+    padding: .2rem;
+}
+
+
+
+
+
+@media screen and (max-width:750px) {
+    .contact{
+        flex-wrap: wrap;
+    }
+    .address, .input{
+        width: 100%;
+    }
+}
+@media screen and (max-width:450px) {
+    #touch h1{
+font-size: 2rem;
+    }
+    #kitchen h1{
+        font-size: 1.3rem;
+        margin-top: 5px;
+    }
+    .input h1{
+        font-size: 1.3rem;
+    }
+    
+}
+@media screen and (max-width:900px) {
+    nav{
+        position: fixed;
+        top: 65px;
+        left: -850px;
+        height: 100vh;
+        width: 100%;
+        background-color: #2874f0;
+        transition: all 1s;
+        padding: .8rem;
+        justify-content: center;
+        /* z-index: 1; */
+    }
+    nav ul{
+        flex-direction: column;
+        /* padding: .8rem; */
+        width: 100%;
+        background-color: unset;
+    }
+    nav ul li {
+        background-color: #2874f0;
+        text-align: center;
+    }
+    nav ul li a{
+        background-color: #2874f0;
+        font-size: 1.3rem;
+    
+    }
+    .menuicon{
+        display: unset!important;
+        font-size: 2rem;
+        
+        padding: .3rem .5rem;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        color: white;
+        
+        
+    }
+    label{
+        position: relative;
+       
+    }
+    input:checked~nav{
+        left: 0px;
+    }
+}
